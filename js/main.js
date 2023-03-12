@@ -2,6 +2,9 @@
   window.addEventListener("load", function () {
     this.document.body.classList.remove("before-load");
   });
+  document.querySelector(".loading").addEventListener("transitionend", (e) => {
+    document.body.removeChild(e.currentTarget);
+  });
 
   let observer = new IntersectionObserver((e) => {
     e.forEach((item) => {
