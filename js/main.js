@@ -3,6 +3,20 @@
     this.document.body.classList.remove("before-load");
   });
 
+  let observer = new IntersectionObserver((e) => {
+    e.forEach((item) => {
+      if (item.isIntersecting) {
+        item.target.style.opacity = 1;
+        item.target.style.transform = `translateY(0px)`;
+      } else {
+        item.target.style.opacity = 0;
+      }
+    });
+  });
+  let about = document.querySelector(".about");
+  observer.observe(about);
+
+  // typing Effects
   let i = 0;
   let text;
   text = "Kyoungjoo Lee";
