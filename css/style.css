@@ -36,7 +36,6 @@
 .header {
   width: 100%;
   height: 100vh;
-  background-color: #fff;
   text-align: center;
 }
 .header-wrap {
@@ -45,16 +44,16 @@
 .header-wrap > span {
   font-size: 24px;
   font-weight: 600;
-
-  color: #75a571;
+  color: #090915;
+  opacity: 0.65;
 }
 
 .header-wrap p {
   padding-bottom: 50px;
   line-height: 150%;
   font-weight: 300;
-  opacity: 0.85;
-  color: #324315;
+  opacity: 0.65;
+  color: #090915;
 }
 .header-title {
   font-size: 84px;
@@ -79,7 +78,7 @@
   text-align: center;
   padding-bottom: 50px;
   font-weight: bold;
-  color: #324315;
+  color: #090915;
 }
 /* about */
 .about {
@@ -128,7 +127,7 @@
 /* contents */
 .contents-wrap {
   padding-top: 90px;
-  background-color: #f1f1f1;
+  background-color: #edf1f7;
 }
 .item {
   display: flex;
@@ -176,7 +175,7 @@
   display: inline-block;
   width: 135px;
   height: 50px;
-  background-color: #75a571;
+  background-color: #a3acca;
   border-radius: 50px;
   text-align: center;
   line-height: 50px;
@@ -187,19 +186,35 @@
 
 /* design */
 #design {
-  background-color: #fff;
+  background-color: #fafcfe;
+  height: 60vh;
+}
+.design-con {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* background-color: yellow; */
+}
+.design-wrap {
+  padding: 0.2rem;
 }
 .design label {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35vw;
-  height: 36vh;
-  background-color: gray;
+  width: 28vw;
+  height: 32vh;
+  background-color: #edf1f7;
   margin: 0 auto;
   z-index: 100;
+  /* background-image: url(/img/des01.png); */
+  background-repeat: no-repeat;
+  background-size: auto 85%;
+  background-position: center;
 }
-
+.design input {
+  display: none;
+}
 .design input:checked + .modal {
   display: flex;
 }
@@ -221,12 +236,11 @@
   width: 80vw;
   height: 80vh;
   padding: 1em;
-  background-image: url(/img/04.png);
+  /* background-image: url(/img/04.png); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  /* z-index: 100; */
 }
 .close-btn {
   all: unset;
