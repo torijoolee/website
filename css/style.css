@@ -12,10 +12,7 @@
   align-items: center;
   justify-content: space-between;
 }
-/* .logo a {
-  font-size: 18px;
-  font-weight: bold;
-} */
+
 .menu-wrap {
   display: flex;
   align-items: center;
@@ -44,7 +41,7 @@
 .header-wrap > span {
   font-size: 24px;
   font-weight: 600;
-  color: #090915;
+  color: #2a0b86;
   opacity: 0.65;
 }
 
@@ -52,8 +49,7 @@
   padding-bottom: 50px;
   line-height: 150%;
   font-weight: 300;
-  opacity: 0.65;
-  color: #090915;
+  color: #a3acca;
 }
 .header-title {
   font-size: 84px;
@@ -62,7 +58,7 @@
   padding-bottom: 35px;
   line-height: 100%;
   font-weight: 600;
-  opacity: 0.85;
+  color: #2b2b2b;
 }
 
 .header .btn {
@@ -78,7 +74,7 @@
   text-align: center;
   padding-bottom: 50px;
   font-weight: bold;
-  color: #090915;
+  color: #2b2b2b;
 }
 /* about */
 .about {
@@ -99,8 +95,8 @@
   width: 34%;
 }
 .about-item:nth-child(2) {
-  border-right: 1px solid rgba(0, 0, 0, 0.15);
-  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  border-right: 0.8px solid #a3acca;
+  border-left: 0.8px solid #a3acca;
 }
 .about-text {
   height: 100%;
@@ -108,12 +104,14 @@
 }
 .about-text span:nth-child(1) {
   font-size: 14px;
+  opacity: 0.65;
 }
 .about-text span:nth-child(2) {
   display: block;
   font-size: 18px;
   padding-top: 8px;
   font-weight: 500;
+  color: #2a0b86;
 }
 .about-text p {
   font-size: 15px;
@@ -127,14 +125,14 @@
 /* contents */
 .contents-wrap {
   padding-top: 90px;
-  background-color: #edf1f7;
+  background-color: #f5f5f5;
 }
 .item {
   display: flex;
   height: 270px;
   flex-shrink: 0;
   padding: 90px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 0.8px solid #a3acca;
 }
 .picture {
   width: 490px;
@@ -175,7 +173,7 @@
   display: inline-block;
   width: 135px;
   height: 50px;
-  background-color: #a3acca;
+  background-color: #6768aa;
   border-radius: 50px;
   text-align: center;
   line-height: 50px;
@@ -186,7 +184,8 @@
 
 /* design */
 #design {
-  background-color: #fafcfe;
+  /* background-color: #fafcfe; */
+  background-color: white;
   height: 60vh;
 }
 .design-con {
@@ -204,7 +203,7 @@
   justify-content: center;
   width: 28vw;
   height: 32vh;
-  background-color: #edf1f7;
+  background-color: #f5f5f5;
   margin: 0 auto;
   z-index: 100;
   /* background-image: url(/img/des01.png); */
@@ -257,4 +256,9 @@
 }
 .close-btn span {
   color: white;
+}
+/* contact */
+.contact {
+  height: 50vh;
+  background-color: #f5f5f5;
 }
