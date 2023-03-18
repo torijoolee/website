@@ -1,43 +1,35 @@
 (() => {
-  const modalClose = document.querySelector(".close-btn");
-  const input = document.querySelector(".design input");
-  let checked = true;
+  const modalClose = document.querySelectorAll(".close-btn");
+  // const input = document.querySelectorAll(".design-wrap input");
+  const modal = document.querySelectorAll(".modal");
+  const checkBox = document.querySelectorAll(" input[name=design]");
 
-  modalClose.addEventListener("click", function (e) {
-    if (e.target.checked == true) {
-      e.target.checked = false;
-    }
-  });
-})();
-(() => {
-  const modal = document.querySelectorAll(".design .modal");
-  const designCon = document.querySelector(".design-con");
-  let mouseStart = 0;
-  let move = 0;
-  let click = false;
-
-  designCon.addEventListener("mousedown", function (e) {
-    mouseStart = e.clientX;
-    click = true;
-    // if (click == true) {
-    //   modal.forEach((item) => {
-    //     item.style.display = "none";
-    //   });
-    // }
+  //모달 전부 안보이게 하기
+  modal.forEach((elem) => {
+    elem.classList.add("none");
   });
 
-  //check box가 선택되면
-  designCon.addEventListener("mousemove", function (e) {
-    if (click == true) {
-      console.log(e.clientX - mouseStart);
-      move = e.clientX - mouseStart;
-      designCon.style.transform = `translateX(${move}px)`;
-      // modal.forEach((item) => {
-      //   item.style.display = "none";
-      // });
-    }
-  });
-  designCon.addEventListener("mouseup", function (e) {
-    click = false;
-  });
+  //인풋에 데이터인덱스 넣어주기
+  //checkbox 체크 감지
+  for (let j = 0; j < checkBox.length; j++) {
+    checkBox[j].dataset.index = j;
+    checkBox[j].addEventListener("change", function (e) {
+      console.log(e.currentTarget.checked);
+    });
+  }
+
+  //체크박스를 누르면 모달 클래스 none 제거
+
+  // for(let j= 0; j<checkBox.length; j++){
+  //   checkBox[i].classList.remove("none")
+  // }
+  //모달 닫기를 누르면 모달 안보이게하기
+  // modalClose.forEach((closeBtn) => {
+  //   closeBtn.addEventListener("click", function () {
+  //     console.log("clicked");
+  //     for(let i = 0; i< modal.length; i++){
+  //       modal[i].classList.
+  //     }
+  //   });
+  // });
 })();

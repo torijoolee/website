@@ -95,7 +95,7 @@
             <span>02</span>
             <span>better experiences</span>
             <p>
-              더 풍부한 유저 경험과 다양한 인터렉션을 표현하기 위해 라이브러리가
+              더 풍부한 유저 경험과 다양한 인터렉션을 구현하기 위해 라이브러리가
               아닌 Vanila JavaScript 코드를 작성합니다.
             </p>
           </div>
@@ -221,6 +221,12 @@
 
       <div class="design-con">
         <div class="design-wrap">
+          <input type="checkbox" name="design" id="design01" />
+          <div class="modal">
+            <div class="modal-content">
+              <button class="close-btn">X</button>
+            </div>
+          </div>
           <label
             for="design01"
             style="
@@ -229,24 +235,18 @@
             "
           >
           </label>
-          <input type="checkbox" name="design01" id="design01" />
-          <div class="modal">
-            <div class="modal-content">
-              <button class="close-btn"><span>X</span></button>
-            </div>
-          </div>
         </div>
         <div class="design-wrap">
+          <input type="checkbox" name="design" id="design02" />
+          <div class="modal">
+            <div class="modal-content">
+              <button class="close-btn">X</button>
+            </div>
+          </div>
           <label for="design02" style="background-image: url(/img/des02.png)">
           </label>
-          <input type="checkbox" name="design02" id="design02" />
-          <div class="modal">
-            <div class="modal-content">
-              <button class="close-btn"><span>X</span></button>
-            </div>
-          </div>
         </div>
-        <div class="design-wrap">
+        <!-- <div class="design-wrap">
           <label for="design03" style="background-image: url(/img/des03.png)">
           </label>
           <input type="checkbox" name="design03" id="design03" />
@@ -265,7 +265,7 @@
               <button class="close-btn"><span>X</span></button>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- <div class="design-wrap">
           <label for="design03" style="background-image: url(/img/des03.png)">
           </label>
@@ -310,16 +310,17 @@
     </section>
     <section id="contact" class="contents-wrap contact padding">
       <h2 class="menu-title">Contact</h2>
-      <div class="email">leekj951008@gmail.com</div>
-
-      <p>2023 Kyoungjoo Lee -&copy; All rights reserved</p>
-      <p>kyoungjoolee.com</p>
-      <div class="contact-link">
-        <a href=""><i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fas fa-comment-dots"></i></a>
-        <a target="_blank" href="https://kyoungjoolee.tistory.com/"
-          ><img src="/img/티스토리logo.png" alt=""
-        /></a>
+      <div class="contact-wrap">
+        <div class="email">leekj951008@gmail.com</div>
+        <p>2023 Kyoungjoo Lee &copy; All rights reserved</p>
+        <p>kyoungjoolee.com</p>
+        <div class="contact-link">
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fas fa-comment-dots"></i></a>
+          <a target="_blank" href="https://kyoungjoolee.tistory.com/"
+            ><img src="/img/티스토리logo.png" alt=""
+          /></a>
+        </div>
       </div>
     </section>
     <script src="/js/main.js"></script>
