@@ -21,7 +21,7 @@
     }
   });
   nextBtn.addEventListener("click", function () {
-    if (currentPage < designItem.length - 1) {
+    if (currentPage < designItem.length - 2) {
       currentPage++;
       designCon.style.transform = `translateX(-${
         designItemWidth * currentPage

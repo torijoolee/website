@@ -1,0 +1,45 @@
+/* open chat link */
+.qr-code {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.qr-text {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  position: relative;
+  margin-right: 0.8em;
+  bottom: 0.7em;
+  animation: 1s moving alternate infinite;
+  opacity: 0.85;
+  transition: opacity 0.5s linear;
+}
+.qr-text.none {
+  opacity: 0;
+}
+@keyframes moving {
+  from {
+    margin-right: 0.8em;
+  }
+
+  to {
+    margin-right: 1.5em;
+  }
+}
+.qr-text span {
+  display: block;
+  position: absolute;
+  right: 0;
+  font-size: large;
+  color: #2a0b86;
+}
+.qr-code a img {
+  width: 14vh;
+  height: auto;
+}
+.qr-text.none {
+  display: none;
+}
