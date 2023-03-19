@@ -71,13 +71,14 @@
 }
 /* about */
 .about {
+  padding-top: 90px;
   opacity: 0;
   transform: translateY(100px);
   transition: all 1s ease-out;
 }
 .about-wrap {
   display: flex;
-  flex-shrink: ;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   padding-bottom: 15%;
