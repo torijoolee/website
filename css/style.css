@@ -194,7 +194,6 @@
   align-items: center;
   justify-content: flex-start;
 }
-
 .design-wrap {
   padding: 0 1%;
 }
@@ -207,6 +206,10 @@
   background-repeat: no-repeat;
   background-size: auto 85%;
   background-position: center;
+  cursor: pointer;
+}
+.design label:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 /* .dot-wrap {
   display: flex;
@@ -235,17 +238,15 @@
   border-radius: 50%;
   cursor: pointer;
 }
-
 .design .prev {
   left: 15%;
 }
 .design .next {
   right: 15%;
 }
-
 /* modal */
 .modal {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   bottom: 0;
