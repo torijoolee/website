@@ -313,9 +313,12 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  opacity: 1;
+  transition: all 1s ease-in;
 }
 .modal.none {
   display: none;
+  opacity: 0;
 }
 .modal-content {
   background-color: #fff;
