@@ -32,7 +32,4 @@
     }
   }
   typing();
-
-  //탑화면의 2/1을지나면 사라진다.
-  const qrText = document.querySelector(".qr-text");
 })();

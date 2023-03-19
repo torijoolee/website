@@ -18,3 +18,9 @@ a {
 .padding {
   padding: 0 90px;
 }
+:root {
+  /* color */
+  --color-purple: #2a0b86;
+  --color-lightPurple: #a3acca;
+  --color-black: #2b2b2b;
+}

@@ -17,13 +17,15 @@
       rel="stylesheet"
     />
   </head>
+
   <body class="before-load">
+    <!-- loading -->
     <div class="loading">
       <svg class="loading-circle">
         <circle cx="50%" cy="50%" r="25"></circle>
       </svg>
     </div>
-
+    <!-- qr-code -->
     <div class="qr-wrap">
       <div class="qr-code">
         <p class="qr-text">
@@ -223,7 +225,13 @@
         <div class="design-wrap">
           <input type="checkbox" name="design" id="design01" />
           <div class="modal">
-            <div class="modal-content">
+            <div
+              class="modal-content"
+              style="
+                background-image: url(/img/04.png);
+                background-color: white;
+              "
+            >
               <button class="close-btn">X</button>
             </div>
           </div>
@@ -239,7 +247,13 @@
         <div class="design-wrap">
           <input type="checkbox" name="design" id="design02" />
           <div class="modal">
-            <div class="modal-content">
+            <div
+              class="modal-content"
+              style="
+                background-image: url(/img/02des.png);
+                background-color: white;
+              "
+            >
               <button class="close-btn">X</button>
             </div>
           </div>
@@ -324,7 +338,10 @@
       </div>
     </section>
     <script src="/js/main.js"></script>
-    <script src="/js/modal-close.js"></script>
+    <script src="/js/qr.js"></script>
+    <script src="/js/design-modal.js"></script>
+    <script src="/js/design.js"></script>
+
     <script
       src="https://kit.fontawesome.com/27333d21e2.js"
       crossorigin="anonymous"
