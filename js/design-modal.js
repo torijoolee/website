@@ -6,10 +6,6 @@
   let checkTF = false;
   let checkdata = 0;
 
-  //모달 전부 안보이게 하기
-
-  //인풋에 데이터인덱스 넣어주기
-  //checkbox 체크 감지
   for (let j = 0; j < checkBox.length; j++) {
     checkBox[j].dataset.index = j;
     // modal[j].dataset.index = j;
