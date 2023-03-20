@@ -52,10 +52,10 @@
     width: 40vw;
   }
   .design .prev {
-    left: 0%;
+    left: 2%;
   }
   .design .next {
-    right: 0%;
+    right: 2%;
   }
 }
 
@@ -81,13 +81,23 @@
     border-right: none;
     border-left: none;
   }
+
   .item {
     flex-direction: column;
     padding-top: 4rem;
-    padding-bottom: 20em;
+    padding-bottom: 24em;
+  }
+  .picture {
+    margin: 0;
+  }
+  .design .prev {
+    left: 2%;
+  }
+  .design .next {
+    right: 2%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   #design {
     padding-top: 3rem;
   }
