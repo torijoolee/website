@@ -1,0 +1,42 @@
+@media (max-width: 760px) {
+  .nav {
+    display: none;
+  }
+  .padding {
+    padding: 0 1rem;
+  }
+  .about-wrap {
+    flex-direction: column;
+  }
+  .about-item {
+    width: 100%;
+    height: 30vh;
+    padding-top: 5%;
+  }
+  .about-item:nth-child(2) {
+    border-top: 0.8px solid var(--color-lightPurple);
+    border-bottom: 0.8px solid var(--color-lightPurple);
+    border-right: none;
+    border-left: none;
+  }
+  .contents-wrap {
+  }
+  .item {
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 16rem;
+  }
+  .picture {
+    width: 60vw;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+  .right {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .btn {
+    margin-top: 1rem;
+  }
+}
