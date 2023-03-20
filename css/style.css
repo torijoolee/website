@@ -147,24 +147,30 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  position: relative;
 }
 .title {
   font-size: 24px;
   font-family: "Noto Sans KR", sans-serif;
+  opacity: 0.85;
+  margin-bottom: 1.5em;
 }
 .inner-text {
   font-size: 15px;
   font-weight: 300;
   line-height: 150%;
   font-family: "Noto Sans KR", sans-serif;
+  opacity: 0.85;
 }
 .ect {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
-  line-height: 140%;
+  line-height: 150%;
   font-family: "Noto Sans KR", sans-serif;
+  opacity: 0.65;
+  margin-top: 1rem;
 }
 
 .btn {
@@ -175,9 +181,16 @@
   border-radius: 50px;
   text-align: center;
   line-height: 50px;
-  margin-right: 5px;
+  margin-right: 0.2rem;
+  /* margin-top: 1.5rem; */
   cursor: pointer;
   color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.btn-rig {
+  left: 28%;
 }
 
 /* design */
@@ -241,6 +254,7 @@
   background-color: transparent;
   border-radius: 50%;
   cursor: pointer;
+  opacity: 0.65;
 }
 .design .prev {
   left: 15%;

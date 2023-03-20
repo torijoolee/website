@@ -16,6 +16,7 @@
   animation: 1s moving alternate infinite;
   opacity: 0.85;
   transition: opacity 0.5s linear;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .qr-text.none {
   opacity: 0;
