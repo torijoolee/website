@@ -285,8 +285,8 @@
   opacity: 0;
 }
 .modal-content {
-  width: 80vw;
-  height: 80vh;
+  width: 85vw;
+  height: 75vh;
   padding: 1em;
   background-position: center;
   background-repeat: no-repeat;
@@ -331,6 +331,7 @@
   font-weight: 600;
   margin-bottom: 1rem;
   font-size: 16px;
+  color: var(--color-purple);
 }
 .contact-link {
   display: flex;

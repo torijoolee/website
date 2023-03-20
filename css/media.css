@@ -27,9 +27,9 @@
   .item {
     flex-direction: column;
     padding-top: 4rem;
-    padding-bottom: 20em;
+    padding-bottom: 23em;
     border-top: none;
-    border-bottom: 0.8px solid var(--color-lightPurple);
+    border: none;
   }
   .picture {
     width: 60%;
@@ -64,6 +64,10 @@
   }
   .contact {
     padding-top: 3rem;
+  }
+  .modal-content {
+    height: 50vh;
+    width: 90%;
   }
 }
 
