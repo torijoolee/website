@@ -32,4 +32,7 @@
       currentPage = 0;
     }
   });
+  window.addEventListener("resize", function () {
+    this.document.location.reload();
+  });
 })();
