@@ -44,6 +44,7 @@
   line-height: 150%;
   font-weight: 300;
   color: var(--color-lightPurple);
+  font-family: "Noto Sans KR", sans-serif;
 }
 .header-title {
   font-size: 84px;
@@ -149,18 +150,21 @@
   justify-content: space-between;
 }
 .title {
-  font-size: 26px;
+  font-size: 24px;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .inner-text {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 150%;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .ect {
   font-size: 15px;
   display: flex;
   flex-direction: column;
   line-height: 140%;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .btn {
