@@ -7,36 +7,62 @@
   .right {
     width: 50%;
   }
+  .btn-rig {
+    left: 30%;
+  }
 }
 @media (max-width: 960px) {
   .padding {
     padding: 0 1rem;
   }
   .about {
-    padding-bottom: 20%;
+    padding-bottom: 15%;
   }
-  .about-item {
+  .contents-wrap {
+    padding-top: 100px;
   }
   .item {
     flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 18rem;
+    padding-top: 4rem;
+    padding-bottom: 24em;
+    border-top: none;
+    border-bottom: 0.8px solid var(--color-lightPurple);
   }
   .picture {
-    width: 50vw;
-    padding: 0 1rem;
+    width: 60%;
     margin-bottom: 1rem;
   }
   .right {
-    width: 55vw;
+    width: 60%;
     align-items: flex-start;
   }
+  .title {
+    margin: 1rem 0;
+  }
+  .inner-text {
+    margin-bottom: 1rem;
+  }
   .btn {
-    margin-top: 1rem;
+    margin-top: 2rem;
+  }
+  .design-con {
+    width: 80%;
+  }
+  .design label {
+    width: 40vw;
+  }
+  .design .prev {
+    left: 0%;
+  }
+  .design .next {
+    right: 0%;
   }
 }
 
-/* @media (max-width: 760px) {
+@media (max-width: 768px) {
+  .qr-code {
+    display: none;
+  }
   .nav {
     display: none;
   }
@@ -55,6 +81,71 @@
     border-right: none;
     border-left: none;
   }
-  .contents-wrap {
+  .item {
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 20em;
   }
-} */
+}
+@media (max-width: 480px) {
+  #design {
+    padding-top: 3rem;
+  }
+  .header {
+    height: 100vh;
+  }
+  .header-title {
+    font-size: 48px;
+  }
+  .header-wrap {
+    padding-top: 30vh;
+  }
+  .about {
+    padding-top: 0;
+  }
+  #portfolio {
+    padding-top: 3rem;
+  }
+  .picture {
+    margin: 0;
+    width: 100%;
+  }
+  .about-item {
+    height: 30vh;
+  }
+  .contents-wrap {
+    padding-top: 0;
+  }
+  .right {
+    width: 90%;
+  }
+  .item {
+    border-bottom: 0;
+  }
+  .design-con {
+    width: 80vw;
+  }
+  .design label {
+    width: 80vw;
+  }
+  .design-btn {
+    top: 50%;
+    width: 30px;
+  }
+  .design .prev {
+    left: 2%;
+  }
+  .design .next {
+    right: 2%;
+  }
+  .contact {
+    padding-top: 3rem;
+  }
+  .modal-content {
+    width: 100%;
+    height: 50vw;
+  }
+  .close-btn {
+    top: -4em;
+  }
+}

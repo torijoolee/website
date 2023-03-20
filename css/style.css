@@ -121,16 +121,15 @@
 /* contents */
 .contents-wrap {
   padding-top: 90px;
-  background-color: #f5f5f5;
+  background-color: #f6f6f6;
 }
 .item {
   display: flex;
   align-items: center;
-
   height: 270px;
   flex-shrink: 0;
   padding: 90px 0;
-  border-top: 2px solid white;
+  border-top: 0.8px solid var(--color-lightPurple);
 }
 .picture {
   width: 64vh;
@@ -143,20 +142,21 @@
   align-items: center;
   justify-content: center;
   /* box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
 }
 .right {
   width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   position: relative;
 }
 .title {
   font-size: 24px;
   font-family: "Noto Sans KR", sans-serif;
   opacity: 0.85;
-  margin-bottom: 1.5em;
+  line-height: 150%;
 }
 .inner-text {
   font-size: 15px;
@@ -172,10 +172,8 @@
   line-height: 150%;
   font-family: "Noto Sans KR", sans-serif;
   opacity: 0.65;
-  margin-top: 1rem;
   margin-left: 0.1rem;
 }
-
 .btn {
   display: inline-block;
   width: 135px;
@@ -188,11 +186,7 @@
   /* margin-top: 1.5rem; */
   cursor: pointer;
   color: white;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   box-shadow: var(--color-lightPurple) 0px 2px 10px;
-
   opacity: 0.85;
 }
 .btn-rig {
@@ -228,14 +222,15 @@
   justify-content: flex-start;
   width: 25vw;
   height: 32vh;
-  background-color: #f5f5f5;
+  background-color: #f6f6f6;
   background-repeat: no-repeat;
   background-size: auto 85%;
   background-position: center;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
 }
 .design label:hover {
-  background-color: rgba(15, 15, 15, 0.08);
+  background-color: rgba(10, 10, 10, 0.08);
 }
 /* .dot-wrap {
   display: flex;
@@ -321,7 +316,7 @@
 /* contact */
 .contact {
   height: 40vh;
-  background-color: #f5f5f5;
+  background-color: #f6f6f6;
   text-align: center;
 }
 .contact-wrap {
