@@ -8,11 +8,6 @@
   designCon.addEventListener("mousedown", function (e) {
     mouseStart = e.clientX;
     click = true;
-    // if (click == true) {
-    //   modal.forEach((item) => {
-    //     item.style.display = "none";
-    //   });
-    // }
   });
 
   //check box가 선택되면
@@ -21,9 +16,6 @@
       console.log(e.clientX - mouseStart);
       move = e.clientX - mouseStart;
       designCon.style.transform = `translateX(${move}px)`;
-      // modal.forEach((item) => {
-      //   item.style.display = "none";
-      // });
     }
   });
   designCon.addEventListener("mouseup", function (e) {

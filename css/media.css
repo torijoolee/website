@@ -16,7 +16,7 @@
     padding: 0 1rem;
   }
   .about {
-    padding-bottom: 15%;
+    padding-bottom: 10%;
   }
   /* .contents-wrap {
     padding-top: 100px;
@@ -110,6 +110,75 @@
   }
 }
 @media (max-width: 500px) {
+  .header-wrap > span {
+    display: none;
+  }
+  .logo {
+    color: var(--color-purple);
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    top: 1.5rem;
+    opacity: 0.65;
+  }
+  .toggle-wrap {
+    background-color: var(--color-lightPurple);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    display: block;
+  }
+  .toggle-top {
+    display: flex;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    justify-content: flex-end;
+  }
+  .toggle {
+    font-size: 2rem;
+    color: var(--color-purple);
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .toggle-menu {
+    background-color: var(--color-lightPurple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+    opacity: 0;
+  }
+  .toggle-menu.active {
+    height: 220px;
+    opacity: 1;
+  }
+
+  .toggle-menu li {
+    height: 55px;
+    width: 100%;
+
+    border-bottom: 0.85px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .toggle-menu li a {
+    color: rgb(245, 245, 245);
+    font-size: 1.4rem;
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .toggle-menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile {
+    display: block;
+  }
   #design {
     padding-top: 3rem;
   }
@@ -117,6 +186,8 @@
     height: 100vh;
   }
   .header-title {
+    position: relative;
+    top: 1rem;
     font-size: 48px;
   }
   .header-wrap {
@@ -125,12 +196,22 @@
   .about {
     padding-top: 0;
   }
-  .about-item {
-    height: 30vh;
+
+  .about-text p {
+    text-align: start;
   }
+  .about-text span:nth-child(1) {
+    font-size: 1rem;
+  }
+  .about-text span:nth-child(2) {
+    font-size: 1.5rem;
+  }
+  .about-item {
+    height: 25vh;
+  }
+
   .item {
     border-bottom: 0;
-    height: 250px;
   }
   .picture {
     margin: 0;
@@ -141,9 +222,8 @@
     padding-top: 0;
   }
   .right {
-    width: 90%;
+    width: 95%;
   }
-
   .design-con {
     width: 80vw;
   }

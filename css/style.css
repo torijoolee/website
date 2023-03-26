@@ -25,6 +25,9 @@
   opacity: 1;
   background-color: var(--color-purple);
 }
+.toggle-wrap {
+  display: none;
+}
 /* header */
 .header {
   width: 100%;
@@ -87,8 +90,9 @@
 .about-item {
   line-height: 160%;
   text-align: start;
-  height: 32vh;
+  height: 25vh;
   width: 34%;
+  padding: 3rem 2rem;
 }
 .about-item:nth-child(2) {
   border-right: 0.8px solid var(--color-lightPurple);
@@ -96,11 +100,11 @@
 }
 .about-text {
   height: 100%;
-  padding: 1% 12%;
+  /* padding: 1% 12%; */
 }
 .about-text span:nth-child(1) {
   font-size: 0.8rem;
-  opacity: 0.65;
+  opacity: 0.85;
   color: var(--color-lightPurple);
 }
 .about-text span:nth-child(2) {
@@ -168,6 +172,7 @@
 .ect {
   font-size: 14px;
   display: flex;
+
   flex-direction: column;
   line-height: 150%;
   font-family: "Noto Sans KR", sans-serif;

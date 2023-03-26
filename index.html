@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="publisher"
+      content="웹 퍼블리셔 포트폴리오용 웹사이트입니다 Web publisher portfolio website"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="kyoungjoo lee" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kyoungjoo's Portfolio</title>
 
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="/css/loading.css" />
-    <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/qrcode.css" />
+    <link rel="stylesheet" href="css/loading.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/qrcode.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="/css/media.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <!-- fontx -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,6 +75,19 @@
         </div>
       </ul>
     </nav>
+    <div class="toggle-wrap">
+      <div class="logo">WEB PUBLISHER PORTFOLIO</div>
+      <div class="toggle-top">
+        <i class="fas fa-bars toggle"></i>
+      </div>
+      <ul class="toggle-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
     <!-- header -->
     <section id="header" class="header">
       <div class="header-wrap">
@@ -91,9 +110,9 @@
             <span>01</span>
             <span>better design</span>
             <p>
-              모바일과 웹에서의 구성 요소를 접근성과 웹표준을 준수하는 HTML
-              시멘틱 태그와 CSS를 활용해 시각적으로 보기 좋은 페이지를
-              구현하고자 합니다.
+              화면을 사용하는 모든 사용자들을 위해 접근성과 웹표준을 준수하는
+              HTML 시멘틱 태그와 CSS를 활용해 디자인 의도와 개발 방향에 맞게
+              UI를 구현하고자 합니다.
             </p>
           </div>
         </div>
@@ -102,8 +121,8 @@
             <span>02</span>
             <span>better experiences</span>
             <p>
-              더 풍부한 유저 경험과 다양한 인터렉션을 구현하기 위해 라이브러리가
-              아닌 Vanila JavaScript 코드를 작성합니다.
+              더 풍부한 사용자 경험을 위해 다양한 인터렉션을 구현하고자 하며
+              라이브러리에 의존하지 않고 Vanila JavaScript 코드를 작성합니다.
             </p>
           </div>
         </div>
@@ -112,9 +131,8 @@
             <span>03</span>
             <span>co-work</span>
             <p>
-              그래픽 디자인 전공을 바탕으로 디자이너와 원활한 소통 및 협력이
-              가능합니다. 또한 타 팀을 퍼블리싱과 분리하지 않고 융합된 영역으로
-              이해하기 위해 꾸준히 공부합니다.
+              타 팀을 퍼블리싱과 분리하지 않고 융합된 영역으로 이해하고 협업하기
+              위해 꾸준히 공부합니다.
             </p>
           </div>
         </div>
@@ -129,7 +147,10 @@
             <img src="/img/01.png" alt="" />
           </div>
           <div class="text right">
-            <h2 class="title">모바일 간편결제 애플리케이션 사용성 평가 연구</h2>
+            <h2 class="title">
+              모바일 간편결제 애플리케이션<br class="mobile" />
+              사용성 평가 연구
+            </h2>
             <p class="inner-text">
               앱카드 애플리케이션 사용자 경험 증대와 플랫폼 강화를 위해 모바일
               간편결제 애플리케이션 사용성 평가 연구 소논문 시각화, 반응형 제작
@@ -137,7 +158,8 @@
 
             <div class="ect">
               <p class="tool">
-                <span> HTML</span>·<span>CSS</span>·<span>JavaScript</span>
+                <span> HTML</span
+                >·<span>CSS</span>·<span>JavaScript</span>·<span>Figma</span>
               </p>
               <p class="con">Design 100% / Publishing 100%</p>
             </div>
@@ -145,10 +167,15 @@
               <a
                 target="_blank"
                 class="btn btn-left"
-                href="/portfolio/UXportfolioSecond/index.html"
+                href="/portfolio/01/index.html"
                 >View</a
               >
-              <a class="btn btn-rig" href="">Code</a>
+              <a
+                class="btn btn-rig"
+                target="_blank"
+                href="https://github.com/torijoolee/UXportfolioSecond.git"
+                >Code</a
+              >
             </div>
           </div>
         </div>
@@ -157,10 +184,9 @@
             <img src="/img/02.png" alt="" />
           </div>
           <div class="text right">
-            <h2 class="title">'lasola' website Clone-Coding</h2>
+            <h2 class="title">웹사이트 클론 코딩 'lasola'</h2>
             <p class="inner-text">
-              기존 웹사이트를 라이브러리 없이 Vanilla JavaScript 코드로 구현,
-              반응형 제작
+              기존 웹사이트를 라이브러리 없이 Vanilla JavaScript 코드로 구현
             </p>
 
             <div class="ect">
@@ -173,10 +199,15 @@
               <a
                 target="_blank"
                 class="btn btn-left"
-                href="/portfolio/UXportfolioSecond/index.html"
+                href="/portfolio/02/index.html"
                 >View</a
               >
-              <a class="btn btn-rig" href="">Code</a>
+              <a
+                class="btn btn-rig"
+                target="_blank"
+                href="https://github.com/torijoolee/02.git"
+                >Code</a
+              >
             </div>
           </div>
         </div>
@@ -185,26 +216,29 @@
             <img src="/img/03.png" alt="" />
           </div>
           <div class="text right">
-            <h2 class="title">Title</h2>
-            <p class="inner-text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla,
-              natus odit.
-            </p>
+            <h2 class="title">포트폴리오 웹페이지</h2>
+            <p class="inner-text">개인 포트폴리오 사이트 제작, 반응형</p>
 
             <div class="ect">
               <p class="tool">
-                <span> HTML</span>·<span>CSS</span>·<span>JavaScript</span>
+                <span> HTML</span
+                >·<span>CSS</span>·<span>JavaScript</span>·<span>Figma</span>
               </p>
-              <p class="con">contribute</p>
+              <p class="con">Design 100% / Publishing 100%</p>
             </div>
             <div class="btn-wrap">
               <a
                 target="_blank"
                 class="btn btn-left"
-                href="/portfolio/UXportfolioSecond/index.html"
+                href="/portfolio/03/index.html"
                 >View</a
               >
-              <a class="btn btn-rig" href="">Code</a>
+              <a
+                class="btn btn-rig"
+                target="_blank"
+                href="https://github.com/torijoolee/website.git"
+                >Code</a
+              >
             </div>
           </div>
         </div>
@@ -331,6 +365,7 @@
     <script src="/js/qr.js"></script>
     <script src="/js/design-modal.js"></script>
     <script src="/js/design-moving.js"></script>
+    <script src="js/toggle.js"></script>
 
     <script
       src="https://kit.fontawesome.com/27333d21e2.js"
